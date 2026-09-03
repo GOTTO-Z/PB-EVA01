@@ -32,6 +32,11 @@ class Pasajero(Persona):
 
     #IMPLEMENTAR METODO
     def calificarViaje(self, viaje, puntuacion):
-
-        pass
+        # La puntuacion no puede estar por debajo de 0 y por encima de 5
+        if viaje.estado == "FINALIZADO":
+            if 0 >= puntuacion <= 5:
+                print(f"Puntuacion {puntuacion}")
+                return True
+            return False
+        return False
 

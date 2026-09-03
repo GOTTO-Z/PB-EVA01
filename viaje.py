@@ -12,8 +12,7 @@ class Viaje:
 
     # IMPLEMENTAR metodo
     def calcularTarifa(self):
-
-        pass
+        self.tarifa = int(1500 + (800 * self.distancia)) 
 
     def iniciar(self):
 

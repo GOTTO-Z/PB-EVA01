@@ -40,7 +40,12 @@ class Conductor(Persona):
     #realizar este metodo
     def cambiarDisponibilidad(self):
 
-        pass
+        if self.disponible == True:
+            self.disponible = False
+            print("El conductor no esta disponible")
+        print("El conductor esta disponible")
+        self.disponible = True
+        
+    #Se muestra el historial de viajes
     def obtenerHistorial(self):
-
         return self.viajesRealizados
