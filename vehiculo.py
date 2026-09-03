@@ -1,5 +1,5 @@
 class Vehiculo:
-    
+
     def __int__(self, patente, marca, modelo, ano, capacidad, estado):
         self.patente = patente
         self.marca = marca
@@ -16,10 +16,10 @@ class Vehiculo:
         print(f"capacidad maxima: {self.capacidad}")
         print(f"Estado: {self.estado}")
 
-    def cambiar_estado(self):
-        if self.estado == "EN_CURSO":
+    def cambiar_estado(self, nuevo_estado):
+        if self.estado == nuevo_estado:
             self.estado.capitalize() = "FINALIZADO"
             print("Ha finalizado su viaje")
         else:
-            self.estado.capitalize() = "FINALIZADO"
+            self.estado.capitalize() = "EN_CURSO"
             print("Ha iniziado un nuevo viaje")

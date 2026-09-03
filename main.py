@@ -5,6 +5,7 @@ from pago import Pago
 from persona import Persona
 
 
+
 def main():
     pass
     # Crear pasajeros#
@@ -17,35 +18,36 @@ def main():
 
 
     # Crear conductores#
-    conductor_1 = Conductor(1, "Juan", "juanperz@papu.cl", "323-123", vehiculo_1)
-    conductor_2 = Conductor(2, "Benjamin", "benja777qgmail.com", "254-375", vehiculo_2)
+    conductor_1 = Conductor(1, "Juan", "juanperz@papu.cl", "323-123", True, vehiculo_1)
+    conductor_2 = Conductor(2, "Benjamin", "benja777qgmail.com", "254-375", False, vehiculo_2)
 
 
-    # Actualizar teléfono#
+    # Actualizar teléfono
+
     print(pasajero_1)
     pasajero_1 = Persona.actualizarTelefono("234-123")
     print(pasajero_1)
 
 
     # Solicitar viaje
-    # viaje1 = pasajero1.solicitarViaje(
-    #     "Plaza de Armas",
-    #     "Universidad"
-    # )
+    viaje1 = pasajero_1.solicitarViaje(
+        "Plaza de Armas",
+        "Universidad"
+    )
 
     # Conductor acepta
-    
+    conductor_1.aceptarViaje(viaje1)
     
     
 
     # Definir distancia
-    # viaje1.distancia = 5.0
+    viaje1.distancia = 5.0
 
     # Calcular tarifa
-    # viaje1.calcularTarifa()
+    viaje1.calcularTarifa()
 
     # Iniciar viaje
-    
+
     
     
 
@@ -78,3 +80,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#Link hacia el Fork relizado por mi
+#https://github.com/GOTTO-Z/PB-EVA01.git
